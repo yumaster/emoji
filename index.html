@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="keywords" content="yumaster,emoji,表情" />
+    <meta name="description" content="yumaster,emoji,表情" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>emoji</title>
+
+    <link href="https://code.bdstatic.com/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.bdstatic.com/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://code.bdstatic.com/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        .emoji-cell {
+            margin: 15px 15px 70px;
+            border-collapse: collapse;
+        }
+
+            .emoji-cell tr td {
+                float: left;
+                margin: 3px;
+                cursor: pointer;
+                min-width: 80px;
+                text-align: center;
+                border: 1px solid white;
+            }
+
+                .emoji-cell tr td img {
+                    max-height: 40px;
+                    user-select: none;
+                    margin-bottom: 10px;
+                }
+
+                .emoji-cell tr td div {
+                    margin: 10px auto;
+                }
+
+                .emoji-cell tr td:hover {
+                    border-color: #337ab7;
+                }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>emoji<small class="pull-right"><a href="https://cdn.jsdelivr.net/gh/yumaster/emoji/api.js">api.js</a></small></h1>
+
+                <div class="form-group">
+                    <input type="text" class="form-control text-center" id="emojisrc" placeholder="emoji src" />
+                </div>
+
+                <div>
+                    <ul class="nav nav-tabs" id="tablist"></ul>
+                    <div class="tab-content" id="tabitem">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/yumaster/emoji/api.js"></script>
+    <script src="index.js?v2"></script>
+</body>
+</html>
